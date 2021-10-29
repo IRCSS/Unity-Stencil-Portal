@@ -5,7 +5,7 @@
     }
     SubShader
     {
-        Tags { "RenderType"="Opaque"  "Queue"="Geometry-1"}
+        Tags { "RenderType"="Opaque"  "Queue"="Geometry-5"}
         LOD 100
 
         Blend Zero One 

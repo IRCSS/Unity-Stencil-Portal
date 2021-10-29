@@ -12,12 +12,7 @@
 
         Cull Off
 
-        Stencil
-    {
-        Ref 0
-        Comp Equal
 
-    }
 
         Pass
         {

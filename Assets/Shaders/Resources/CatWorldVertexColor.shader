@@ -5,7 +5,7 @@
     }
     SubShader
     {
-        Tags { "RenderType"="Opaque" }
+        Tags { "RenderType"="Opaque" "Queue" = "Geometry-4"}
         LOD 100
         Cull Off
 
