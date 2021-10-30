@@ -20,4 +20,4 @@ More Screen shots:
 
 ![](documentation/beautyShot2.jpg)
 ![](documentation/beautyShot5.jpg)
-![](documentation/HandPaintedTexture.jpg.jpg)
+![](documentation/HandPaintedTexture.jpg)
