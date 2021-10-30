@@ -11,7 +11,7 @@
         LOD 100
         Blend SrcAlpha OneMinusSrcAlpha
        //  Blend One One
-
+        Cull Off
         ZWrite Off
         Pass
         {
@@ -47,7 +47,7 @@
                 o.vertex = UnityObjectToClipPos(v.vertex);
                 o.uv     = TRANSFORM_TEX(v.uv, _MainTex);
                 o.pos    = v.vertex;
-                o.color = v.color;
+                o.color  = v.color;
                 return o;
             }
 
@@ -78,7 +78,8 @@
                 float2 borders = smoothstep(float2(0.5, 0.5), float2(0.1, 0.4), abs(i.uv - 0.5));
 
                 alpha = simplex * bigMask * 1.5;
-                return float4(col.xyz *1. /**  alpha * borders.x * borders.y*/, alpha * borders.x * borders.y) ;
+                float3 c = float3(0.1, 0.1, 0.1)*0.5 + col;
+                return float4(c.xyz /*col.xyz *1.*/ /**  alpha * borders.x * borders.y*/, alpha * borders.x * borders.y) ;
             }
             ENDCG
         }
